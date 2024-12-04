@@ -7,16 +7,18 @@ export default function Home() {
     const [isScrolled, setIsScrolled] = useState(false);
 
     useEffect(() => {
-        const handleScroll = () => {
+        const handleScroll = (event) => {
+            // Ignore scroll events from the movie list container
+            if (event.target.id === 'movieList') return;
             setIsScrolled(window.scrollY > 0);
         };
-
+    
         window.addEventListener('scroll', handleScroll);
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
-
+    
     return (
         <>
             <div>

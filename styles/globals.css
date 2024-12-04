@@ -16,26 +16,11 @@ body {
   font-family: Arial, sans-serif;
 }
 
-.light-mode {
-  background-color: white;
-  color: black;
-}
-
-.dark-mode {
-  background-color: var(--darkModeColor);
-  color: white;
-}
 
 button {
-  margin: 20px;
+  margin: 0 20px;
   padding: 10px 20px;
   cursor: pointer;
-}
-
-h1.red {
-  color: red;
-  display: inline;
-  font-size: 2rem;
 }
 
 .navBar {
@@ -48,16 +33,12 @@ h1.red {
   transition: background-color 0.3s ease;
 }
 
-.navBar h1 {
-  grid-column: 1 / 2;
-  align-self: center;
-}
 
 .navBar.scrolled {
   background-color: var(--darkModeColor);
 }
 
-.navBar > *:nth-last-child(2) {
+.navBar > *:nth-last-child(3) {
   margin-left: auto;
 }
 
