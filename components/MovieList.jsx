@@ -1,5 +1,5 @@
-import React, { useEffect, useRef } from "react"; // @ts-ignore
-import MovieThumb from "./MovieThumb"; // @ts-ignore
+import React, { useEffect, useRef } from "react";
+import MovieThumb from "./MovieThumb";
 const flashMovie = "/assets/imgs/flashMovie.jpg";
 const venomMovie = "/assets/imgs/venomMovie.jpg";
 const breakingBad = "/assets/imgs/breakingBad.jpg";

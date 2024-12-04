@@ -1,10 +1,11 @@
 import React, { useState } from "react";
+import Image from 'next/image';
 
 
 function MovieThumb({src, alt}) {
   return (
     <div className="movieThumb">
-      <img src={src} alt={alt} />
+      <Image src={src} alt={alt} />
     </div>
   );
 }
