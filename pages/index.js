@@ -26,11 +26,13 @@ export default function Home() {
             </div>
             <div className="hero dark-mode">
                 <FeaturedFilm />
+                <div className='listsContainer'>
                 <MovieList title={"Your Favorites"} />
                 <MovieList title={"Popular Now"} />
                 <MovieList title={"Top Rated"} />
                 <MovieList title={"Upcoming"} />
                 <MovieList title={"Now Playing"} />
+                </div>
             </div>
         </>
     );
