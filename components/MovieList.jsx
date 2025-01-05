@@ -65,7 +65,7 @@ function MovieList({ title }) {
         </div>
       </div>
 
-      <div className="h-min"> {/* Add this wrapper */}
+      <div className="h-min">
         <div className="h-min" ref={listRef}>
           <EmblaCarousel slides={shuffledMovies.map((movie, index) => (
             <MovieThumb key={index} src={movie.src} alt={movie.alt} />
